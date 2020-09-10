@@ -14,7 +14,10 @@ public class try01 {
     @Test
     public void second(){
         System.out.println("second one");
-                System.out.println("githubfdan");    }
+                System.out.println("githubfdan");
+        System.out.println("bilgisayardan");
+
+    }
 
 
     @Test

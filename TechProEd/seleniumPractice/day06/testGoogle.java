@@ -38,6 +38,10 @@ public class testGoogle {
         WebElement gmail = driver.findElement(By.linkText("Gmail"));
         Assert.assertTrue(gmail.isDisplayed());
     }
+//    @Test(dependsOnMethods = "gmail")
+//    public void deneme (){
+//        System.out.println("pass");
+//    }
 
         @After
     public void closeBrowser() throws InterruptedException {

@@ -33,4 +33,6 @@ public class rightClick {
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
     }
+
+
 }

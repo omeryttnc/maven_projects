@@ -28,7 +28,8 @@ public class facebookAccount {
     public void testCase4() throws InterruptedException {
         driver.findElement(By.xpath("//*[@id='u_0_2']")).click();
 
-        Thread.sleep(2000);
+       Thread.sleep(2000);
+      //  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
         driver.findElement(By.name("firstname")).
                 sendKeys("Alex", Keys.TAB, "de Souza",

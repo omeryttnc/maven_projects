@@ -11,7 +11,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-//import java.util.De
 
 
 public class try01 {
@@ -53,7 +52,10 @@ public class try01 {
         softAssert.assertTrue(confirmMessage.isDisplayed());
         softAssert.assertAll();
     }
-
+@Test(dependsOnMethods = "alert2")
+public void deneme(){
+    System.out.println("bitti cok sukur");
+}
     @AfterMethod
     public void tearDown() {
         driver.quit();
